@@ -96,6 +96,7 @@ background-color:white;
 border-radius:5px;
 margin:0 10px;
 overflow:hidden;
+border:1px solid #d9d9d9;
 //width:100%;
 `
 const UserImg = styled.div`
@@ -222,6 +223,7 @@ border-radius:5px;
 margin:0 10px;
 overflow:hidden;
 margin-top:5px;
+border:1px solid #d9d9d9;
 
 `
 const FirstTextContainer = styled.div`

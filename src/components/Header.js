@@ -89,12 +89,15 @@ function Header() {
 export default Header
 const Container = styled.div`
 height:55px;
-width:100%;
-//position:fixed;
 background-color:white;
 display:flex;
 align-items:center;
-//justify-content:space-between;
+width:100%;
+position:fixed;
+ top:0;
+// left:0;
+// right:0;
+// z-index:1;
 
 `
 const LinkedInLogo = styled.div`
@@ -111,18 +114,20 @@ const SearchContainer = styled.div`
 display:flex;
 align-items:center;
 padding-left:17px;
-width:250px;
+width:20%;
+//width:250px;
 height:35px;
 background-color:#e6ecff;
 margin-left:5px;
 border-radius:4px;
+
 
 `
 const SearchIc = styled(SearchIcon)`
 
 `
 const PlaceHolder = styled.input`
-//placeholderText:search...;
+height:33px;
 border:none;
 background-color:#e6ecff;
 :focus{
@@ -134,6 +139,7 @@ const MenuContainer = styled.div`
 display:flex;
 align-items:center;
 margin-left:100px;
+width:35%;
 
 `
 
@@ -176,34 +182,11 @@ span{
     font-size:12px;
     color:#737373;
     white-space: nowrap;
-    position:relative;
+   
      &:hover{
         color:#000;
     }
-//     &:after{
-//     position:absolute;
-//     content:"";
-//     height:2px;
-//     background:#000;
-//     right:0;
-//     left:0;
-//     bottom:-7px;
-//     opacity:0;
-//     transform-origin:center center;
-//     transform:scaleX(0);
-//     transition:all 300ms cubic-bezier(0.25,0.46,0.45,0.94)0s;
-   
 
-
-// }
-// }
-// &:hover{
-//         span:after{
-//             transform:scaleX(1);
-//             opacity:1;
-            
-//         }
-//     }
 }
 
 `
@@ -266,9 +249,15 @@ span{
 const WorkContainer = styled.div`
 cursor:pointer;
 margin-right:20px;
+width:5%;
+@media(max-width:1150px){
+     display:none;
+ }
 
 `
-const Work = styled(AccountContainer)``
+const Work = styled(AccountContainer)`
+
+`
 const AppIc = styled.div`
 color:#737373;
 &:hover{
@@ -279,12 +268,18 @@ const Border = styled.div`
 border:1px solid  #e6e6e6;
 height:55px;
 margin-right:30px;
+@media(max-width:1150px){
+     display:none;
+ }
 
 `
 const Premium = styled.div`
  text-align:center;
- width:100px;
+ width:10%;
  cursor:pointer;
+ @media(max-width:1150px){
+     display:none;
+ }
 a{
     font-size:12px;
     color:#660000;
