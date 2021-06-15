@@ -20,5 +20,5 @@ margin-top:80px;
 display:flex;
 align-items:flex-start;
 justify-content:center;
-//min-height:calc(100vh - 55px);
+
 `

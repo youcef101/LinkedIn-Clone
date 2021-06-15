@@ -10,4 +10,7 @@ function Jobs() {
 }
 
 export default Jobs
-const Container = styled.div``
+const Container = styled.div`
+color:black;
+background:white;
+`
